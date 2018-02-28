@@ -12231,7 +12231,7 @@ var SceneManager = function () {
         key: 'sceneIsLoaded',
         value: function sceneIsLoaded() {
 
-            this.rose.geometry.setScale(2);
+            this.rose.geometry.setScale(1.2);
 
             var opts = {
                 fromX: "center",
@@ -12275,7 +12275,7 @@ var SceneManager = function () {
 
             for (var i = 0; i < 8; i++) {
                 var rose = new _rose2.default();
-                rose.geometry.setScale(1.8);
+                rose.geometry.setScale(1.2);
                 _storage2.default.addToUpdate(rose);
                 _storage2.default.roses.push(rose);
             }
@@ -16029,6 +16029,7 @@ var LoaderInterface = function () {
         value: function showChoices() {
             var _this2 = this;
 
+            this.buttons.style.pointerEvents = 'initial';
             _gsap.TweenMax.to(this.separator, 1, { delay: 0.5, scaleY: 1, onComplete: function onComplete() {
                     _gsap.TweenMax.staggerFromTo(_this2.withContent, 1, { opacity: 0, y: 10 }, { opacity: 1, y: 0 }, 0.2);
                     _gsap.TweenMax.staggerFromTo(_this2.withoutContent, 1, { opacity: 0, y: 10 }, { opacity: 1, y: 0 }, 0.2);
@@ -16666,13 +16667,13 @@ var Rose = function (_ObjectSystem) {
             // this.geometry.y = ((this.relativeY * 8.1) % 10) + 8
             // this.geometry.z = this.relativeZ - 8
 
-            this.geometry.z = this.monolitheMaxPositions.nearZ + this.monolitheMaxPositions.nearZ / 10 * this.relativeZ;
-            this.geometry.x = Math.cos(this.speciality + Math.sin(_storage2.default.time * 20 + this.speciality)) / 4 + this.monolitheMaxPositions.nearX * 1.2 - (this.monolitheMaxPositions.nearX * 1.2 - this.monolitheMaxPositions.fearX * 1.2) * this.relativeX;
+            this.geometry.z = this.monolitheMaxPositions.nearZ + 0.5 + this.relativeZ;
+            this.geometry.x = Math.cos(this.speciality + Math.sin(_storage2.default.time * 20 + this.speciality)) / 4 + this.monolitheMaxPositions.nearX - (this.monolitheMaxPositions.nearX - this.monolitheMaxPositions.fearX) * this.relativeX;
             this.geometry.y = this.monolitheMaxPositions.nearY * 1.1 + (this.monolitheMaxPositions.fearY * 1.1 - this.monolitheMaxPositions.nearY * 1.1) * this.relativeY;
 
             // console.log(this.geometry.y);
 
-            this.geometry.y = this.geometry.y % 6 + 3.79;
+            this.geometry.y = this.geometry.y % 4.9 + 3.2;
 
             if (this.placed == false) this.placed = true;
         }
