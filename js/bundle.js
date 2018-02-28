@@ -16075,11 +16075,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _glMatrix = __webpack_require__(1);
 
-var NAMES = ["Roma is", "people are", "Paris is", "Milan is", "Love is"];
+var NAMES = ["People are", "Paris is", "Milano is", "Love is", "Friends are", "Music is", "Liberty is", "Freedom is"];
 
-var WORDS = ["great", "beautiful", "awesome", "amazing"];
+var WORDS = ["great", "beautiful", "awesome", "amazing", "magic", "unbelievable", "fantastic"];
 
-var COLORS = [[_glMatrix.vec3.fromValues(255, 0, 255), _glMatrix.vec3.fromValues(255, 255, 0)], [_glMatrix.vec3.fromValues(0, 255, 255), _glMatrix.vec3.fromValues(255, 0)], [_glMatrix.vec3.fromValues(255, 255, 0), _glMatrix.vec3.fromValues(0, 255, 255)], [_glMatrix.vec3.fromValues(152, 87, 191), _glMatrix.vec3.fromValues(54, 76, 63)]];
+var COLORS = [[_glMatrix.vec3.fromValues(255, 0, 255), _glMatrix.vec3.fromValues(255, 255, 0)], [_glMatrix.vec3.fromValues(0, 255, 255), _glMatrix.vec3.fromValues(255, 0)], [_glMatrix.vec3.fromValues(255, 255, 0), _glMatrix.vec3.fromValues(0, 255, 255)], [_glMatrix.vec3.fromValues(152, 87, 191), _glMatrix.vec3.fromValues(54, 76, 63)], [_glMatrix.vec3.fromValues(74, 77, 234), _glMatrix.vec3.fromValues(42, 125, 61)], [_glMatrix.vec3.fromValues(228, 153, 4), _glMatrix.vec3.fromValues(91, 10, 109)], [_glMatrix.vec3.fromValues(175, 28, 28), _glMatrix.vec3.fromValues(183, 220, 0)]];
 
 exports.default = {
     names: NAMES,
