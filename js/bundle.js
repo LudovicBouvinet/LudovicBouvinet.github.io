@@ -525,17 +525,17 @@ var ObjectSystem = function () {
                         transformY = newY;
                         break;
                     case 'center':
-                        console.log('center');
+                        // console.log('center');
                         break;
                     case 'bottom':
-                        console.log('bottom');
+                        // console.log('bottom');
                         relativeY = (1 - this.userPositionInformations.y) * 2 - 1;
                         newY = fearY * geometry.scale[1] + relativeY;
                         transformY = newY;
                         // expected output: "Mangoes and papayas are $2.79 a pound."
                         break;
                     default:
-                        console.log('I don\'t understant');
+                    // console.log('I don\'t understant');
                 }
             }
 
@@ -548,14 +548,14 @@ var ObjectSystem = function () {
                         break;
                     case 'center':
                         transformX = this.userPositionInformations.x * 2 - 1;
-                        console.log('center');
+                        // console.log('center');
                         break;
                     case 'right':
-                        console.log('right');
+                        // console.log('right');
                         // expected output: "Mangoes and papayas are $2.79 a pound."
                         break;
                     default:
-                        console.log('I don\'t understant');
+                    // console.log('I don\'t understant');
                 }
             }
 
@@ -16077,7 +16077,7 @@ var _glMatrix = __webpack_require__(1);
 
 var NAMES = ["People are", "Paris is", "Milano is", "Love is", "Friends are", "Music is", "Liberty is", "Freedom is"];
 
-var WORDS = ["great", "beautiful", "awesome", "amazing", "magic", "unbelievable", "fantastic"];
+var WORDS = ["great", "beautiful", "awesome", "amazing", "magic", "fabulous", "fantastic"];
 
 var COLORS = [[_glMatrix.vec3.fromValues(255, 0, 255), _glMatrix.vec3.fromValues(255, 255, 0)], [_glMatrix.vec3.fromValues(0, 255, 255), _glMatrix.vec3.fromValues(255, 0)], [_glMatrix.vec3.fromValues(255, 255, 0), _glMatrix.vec3.fromValues(0, 255, 255)], [_glMatrix.vec3.fromValues(152, 87, 191), _glMatrix.vec3.fromValues(54, 76, 63)], [_glMatrix.vec3.fromValues(74, 77, 234), _glMatrix.vec3.fromValues(42, 125, 61)], [_glMatrix.vec3.fromValues(228, 153, 4), _glMatrix.vec3.fromValues(91, 10, 109)], [_glMatrix.vec3.fromValues(175, 28, 28), _glMatrix.vec3.fromValues(183, 220, 0)]];
 
